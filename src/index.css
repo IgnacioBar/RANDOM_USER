@@ -1,21 +1,65 @@
-body {
-  background: #223;
-}
-
+/* Establece el estilo de la tarjeta de usuario */
 .card {
-  border: 1px solid black;
-  background-color: white;
-  border-radius: 10px;
   display: flex;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgb(0 0 0 / 10%);
   margin: 10px;
-  margin-bottom: 10px;
+  padding: 20px;
 }
 
+/* Estilo de la imagen de usuario */
 .card .image {
-  --size: 128px;
+  width: 128px;
+  height: 128px;
+  border-radius: 50%;
+  object-fit: cover; /* Para asegurarse de que la imagen se ajuste correctamente en el círculo */
+  margin-right: 20px;
+}
 
-  width: var(--size);
-  height: var(--size);
-  border-radius: 10px;
-  margin: 10px;
+/* Estilo del contenedor de datos */
+.card .data {
+  flex: 1; /* Ocupa todo el espacio disponible en el contenedor de la tarjeta */
+}
+
+/* Estilo del nombre del usuario */
+.card .name {
+  font-size: 24px;
+  margin: 0;
+}
+
+/* Estilo del nombre de usuario */
+.card .username {
+  font-size: 18px;
+  color: #777;
+}
+
+/* Estilo del correo electrónico */
+.card .email {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+/* Estilo del país y el código postal */
+.card .country,
+.card .postal {
+  margin-top: 5px;
+  font-size: 14px;
+  color: #777;
+}
+
+/* Estilo del número de teléfono */
+.card .phone {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+/* Estilo de fondo de la tarjeta de usuario */
+body {
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
 }

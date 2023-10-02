@@ -6,13 +6,13 @@ export const createCard = (data) => {
       <img class="image" src="${data.imageSrc}" alt="${data.username}">
       <div class="data">
       <h1 class="name">${data.fullname}</h1>
-      <div class="username">${data.username}</div>
-      <div class="email">${data.email}</div>
+      <div class="username">Usuario: ${data.username}</div>
+      <div class="email">Email: ${data.email}</div>
       <div>
-        <span class="country">${data.country}</span>
-        <span class="postal">${data.postcode}</span>
+        <span class="country">Pais: ${data.country}</span>
+        <span class="postal">Código postal: ${data.postcode}</span>
       </div>
-      <div class="phone">${data.phone}</div>
+      <div class="phone">Teléfono: ${data.phone}</div>
       </div>
     </div>
     `;
