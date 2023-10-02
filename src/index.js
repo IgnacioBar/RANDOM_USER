@@ -1,5 +1,5 @@
-import { createCard } from "./modules/createCard";
-import { getUserData } from "./modules/getUserData";
+import { getUserData } from "./modules/getUserData.js";
+import { createCard } from "./modules/createCard.js";
 
 const userData = await getUserData();
 createCard(userData);
